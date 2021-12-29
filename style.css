@@ -2,7 +2,7 @@
 
 html{
     scroll-behavior : smooth;
-    background: rgb(208, 208, 255);
+    background: black;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -11,24 +11,53 @@ body{
     position: fixed;
     font-size: 15rem;
     font-weight: bold;
-    opacity: 0.04;
+    opacity: 0.11;
     bottom: 100px;
+    color:grey;
+}
+.top_image{
+    height: 500px;
+    width: 500px;
+    padding-left: 720px;
+    padding-bottom: 50px;
+
+}
+img{
+    height: 500px;
+    width: 500px;
+    padding-left: 370px;
+    padding-top: 30px
 }
 header{
+    padding-left: 20px;
     position: fixed;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
     width: 100%;
-    background-color: rgb(74, 74, 156);
+    height: px;
+    background-color: #FFCE61;
+}
+.logo{
+    width: 70px;
+    height: 100px;
+    padding-top: 30px;
+}
+.logo-header{
+    padding-left: 780px;
+    display:flex;
+    background-position: top;
+}
+.logoo{
+    height: 50px;
+    width: 90px;
 }
 .banner {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 200px;
+    padding-bottom: 230px;
+    padding-top: 120px;
+    padding-left: 530px;
     color: var(--text-nav);
+    color:#FFCE61;
 }
 @media (min-width: 900px) {
     nav{
@@ -36,65 +65,86 @@ header{
     justify-content: space-between;
     }
 h1{
-    color: rgb(74, 74, 156);
+    color: #FFCE61;
 }
 h3{
     padding-left: 10px;
-    color: e;
-    color: white;
+    color: #FFCE61;
+    color: black;
 }
 h4{
-    color: white;
+    color: #FFCE61;
 }
 .myInfo{
-    colour: white;
+    text-align: center;
+    color: #FFCE61;
+    text-align: left;
 }
 .nav-head{
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-.myInfo{
-    text-align: center;
-    color: rgb(74, 74, 156);
-    text-align: left;
-}
 .social{
     position: fixed;
     bottom: -0px;
-    transition: 500ms ease;
-    padding-left: 1050px;
+    transition: 200ms ease;
 }
 .social:hover{
-    bottom: 100px;
+    bottom: 50px;
 }
 .social::after{
     content: '';
-    height: 100px;
-    width: 50px;
-    background-color: rgb(74, 74, 156);
+    height: 200px;
+    width: 35px;
+    background-color: #FFCE61;
     position: absolute;
-    right:30px;
-}
+    right: 2%;
+    left: 25%;
+    padding-left: 200px;
 
+}
+.social ul{
+    display: inline-flex;
+    row-gap: 2rem;
+    
+}
+.social img{
+    width: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    filter: grayscale(1);
+    transition: filter 100ms ease;
+}
+.social img:hover{
+    filter: grayscale(0);
+    box-shadow: 0 0 0.125 var(--text-nav);
+}
 
 ::-webkit-scrollbar{
     width: .5rem;
 }
 ::-webkit-scrollbar-track{
-    background: rgb(74, 74, 156);
+    background: #FFCE61;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(133, 133, 255);
+    background-color: white;
     border-radius: 0.5rem;
 }
 .content{
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    color:rgb(74, 74, 156)
+    text-align: right;
+    padding-top: 100px;
+    padding-right:30px;
+    padding-bottom: 100px;
+    color:white;
+    background-color: #FFCE61;
 }
 .navigation{
     position: fixed;
     width: 100%;
+}
+footer{
+    padding-left: 20px;
+    padding-top:200px;
+    padding-bottom: 3px;
 }
